@@ -8,5 +8,6 @@ CREATE TABLE albums(
     name VARCHAR(50),
     release_date DATE,
     sales FLOAT,
-    genre VARCHAR(50)
+    genre VARCHAR(50),
+    PRIMARY KEY(id)
 );
