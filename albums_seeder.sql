@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+TRUNCATE albums;
+
 INSERT INTO albums (
     artist,
     name,
@@ -40,6 +42,8 @@ VALUES('Michael Jackson','Thriller',1982,47.3,'Pop'),
     ('Pink Floyd', 'The Wall', 1979, 18.7, 'Progressive rock'),
     ('Santana', 'Supernatural', 1999, 20.5, 'Latin Rock'),
     ("Guns N'Roses", 'Appetite for Destruction', 1987, 21.9, 'Hard Rock');
+
+
 
 
 
