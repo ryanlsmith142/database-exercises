@@ -56,6 +56,7 @@
 
     SELECT * FROM employees WHERE last_name LIKE 'E%' ORDER BY emp_no;
 -- Now reverse the sort order for both queries.
+
     SELECT * FROM employees WHERE first_name IN ('Irena', 'Vidya', 'Maya') ORDER BY last_name desc, first_name desc;
 
     SELECT * FROM employees WHERE last_name LIKE 'E%' ORDER BY emp_no desc;
