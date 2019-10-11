@@ -7,14 +7,14 @@
 
 USE codeup_test_db;
 
-SELECT * FROM albums WHERE artist = 'Pink Floyd';
+SELECT name AS 'Albums by Pink Floyd' FROM albums WHERE artist = 'Pink Floyd';
 
 SELECT release_date FROM albums WHERE name = "Sgt Pepper's Lonely Hearts Club Band";
 
-SELECT genre FROM albums WHERE name ="Nevermind";
+SELECT genre AS 'Genre for Album: Nevermind' FROM albums WHERE name ="Nevermind";
 
-SELECT * FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT * AS 'Albums Between 1990 - 1999' FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 
-SELECT * FROM albums WHERE sales < 20;
+SELECT name AS 'Albums with less than 20 million certified sales',sales FROM albums WHERE sales < 20;
 
-SELECT * FROM albums WHERE genre = 'Rock';
+SELECT name AS 'Rock Genre Albums' FROM albums WHERE genre = 'Rock';
