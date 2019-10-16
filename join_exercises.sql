@@ -45,7 +45,7 @@ JOIN dept_emp ON dept_emp.emp_no = employees.emp_no
 
 JOIN departments on departments.dept_no = dept_emp.dept_no
 
-WHERE departments.dept_name = 'Customer Service' AND titles.to_date > NOW()
+WHERE departments.dept_name = 'Customer Service' AND titles.to_date > NOW() AND dept_emp.to_date > NOW()
 
 GROUP BY titles.title;
 
@@ -65,5 +65,10 @@ WHERE dept_manager.to_date > NOW() AND salaries.to_date > NOW()
 
 ORDER BY departments.dept_name;
 
+# TODO: Bonus Find the names of all current employees, their department name, and their current manager's name.
 
+SHOW tables;
 
+select * from dept_emp limit 10;
+
+select * from dept_manager limit 10;
